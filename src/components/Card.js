@@ -1,14 +1,12 @@
-const CARD_RANKS = ["Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"];
-const CARD_SUITS = ["Clubs", "Diamonds", "Hearts", "Spades"];
-const SUIT_SYMBOLS = ["♣︎", "♦", "♥︎", "♠︎"];
-
+import { CARD_RANKS, CARD_SUITS, SUIT_SYMBOLS } from "../constants";
 
 class Card {
     constructor(rank, suit) {
+        // console.log("Card: ", rank, suit);
         this.rank = rank;
         this.suit = suit;
         this.symbol = SUIT_SYMBOLS[CARD_SUITS.indexOf(suit)];
-        this.value = CARD_RANKS.indexOf(rank);
+        this.value = CARD_RANKS.indexOf(rank) + 1;
     }
 };
 
