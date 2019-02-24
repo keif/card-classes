@@ -1,0 +1,40 @@
+{
+  "name": "card-classes",
+  "version": "0.0.1",
+  "description": "A simple exercise to build out a deck of cards",
+  "main": "main.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^24.1.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "copy-webpack-plugin": "^4.6.0",
+    "jest": "^24.1.0",
+    "uglifyjs-webpack-plugin": "^2.1.1",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.3"
+  },
+  "scripts": {
+    "build": "webpack",
+    "build:watch": "webpack --watch",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/keif/card-classes.git"
+  },
+  "keywords": [
+    "es6",
+    "cards",
+    "javascript"
+  ],
+  "author": "Keith Baker <keith@baker.af>",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/keif/card-classes/issues"
+  },
+  "homepage": "https://github.com/keif/card-classes#readme"
+}
