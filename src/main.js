@@ -1,11 +1,11 @@
 import Deck from "./components/Deck";
 
-console.table(playAGame());
+playAGame();
 
 function playAGame() {
     const deckOfCards = new Deck();
     try {
-        return deckOfCards.makeDeck();
+        deckOfCards.shuffle();
     } catch (error) {
         return new Error(error);
     }
